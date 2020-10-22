@@ -1,0 +1,16 @@
+body{background-image:url(haikei10.jpg) ;
+    background-size: cover;               /* 全画面 */
+    background-attachment: fixed;         /* 固定 */
+    background-position: center center;   /* 縦横中央 */
+    background-color: rgba(15, 189, 160, 0.61);
+    background-blend-mode: lighten;
+}
+h1{font-size: 500%;
+color:orange;
+-webkit-text-stroke: 3px #000;
+}
+input{font-size: 300%;}
+.hinto{font-size: 300%;
+color: orangered;
+-webkit-text-stroke: 1px rgba(255, 255, 255, 0.671);
+}
