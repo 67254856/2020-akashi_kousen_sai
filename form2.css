@@ -1,0 +1,106 @@
+
+.kinyuu1{position: absolute;
+         margin: auto;
+         font-size: 300%;
+         top: 700px; 
+         left:300px;
+}
+
+.kinyuu2{position: absolute;
+         margin: auto;
+         font-size: 300%;
+         top:850px;
+         left:300px;
+}
+
+.sousin1{position: fixed;
+        font-size: 60px;
+        top: 1050px;
+        left:160px;
+
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: #f7f7f7;
+        border-left: solid 6px #ff7c5c;/*左線*/
+        color: #ff7c5c;/*文字色*/
+        font-weight: bold;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+
+}
+
+.sousin1:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+  }
+
+.sousin2{position: fixed;
+         font-size: 60px;
+         top:1050px;
+         left:500px ;
+
+         display: inline-block;
+         padding: 0.5em 1em;
+         text-decoration: none;
+         background: #f7f7f7;
+         border-left: solid 6px #ff7c5c;/*左線*/
+         color: #ff7c5c;/*文字色*/
+         font-weight: bold;
+         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);     
+}
+
+.sousin2:active{
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+
+.aa{ position: fixed;
+    top: 620px;
+    left: 90px;
+
+}
+
+.ab{position: fixed;
+    top:780px;
+    left: 70px;
+
+}
+
+body{background-color: mediumslateblue;}
+h2{color: orangered;
+   font-size: 70px;}
+h1{position: absolute;
+    font-size: 40px;
+    top: 100px;
+    left:50px;}   
+
+
+.btn-text-3d {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    
+    top: 1300px;
+    left: 400px;
+    color: #f32703;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+  }
+  .btn-text-3d:active {
+    position: fixed;  
+    top: 1300px;
+    left:400px;
+    text-shadow: none;
+  }
+  
+ a{
+     position: fixed;
+     top:1300px;
+     margin: auto;
+ } 
+
+.tyuui{position: fixed;
+   font-size: 35px;
+   top:370px;
+   left:30px;
+   color: rgb(3, 247, 186);
+} 
