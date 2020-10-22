@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background-image:url(rogo.jpg) ;
+  background-size: cover;               /* 全画面 */
+  background-attachment: fixed;         /* 固定 */
+  background-position: center center;   /* 縦横中央 */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+  
+  font-family:Khula;
+  font-size:5em;
+  text-align:center;
+  height:200px;
+  width:1000px;
+  display:block;
+  position:absolute;
+  color:none;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  -webkit-text-stroke: 2px #000;
+}
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
