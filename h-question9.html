@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第9問</title>
+<link rel="stylesheet" type="text/css" href="question9.css">
+<script>
+//出題と答えをセットで入れる配列
+var quizzes = [
+    {q:"dmr", a:"cdefgab"},
+];
+//出題前に取得するオブジェクトを入れておく変数
+var quiz;
+
+window.onload = function(){
+    init();
+};
+
+function init(){
+    var r = Math.floor(Math.random() * quizzes.length);
+    quiz = quizzes[r];
+    
+    //問題用のフォームに表示する
+    var questionForm = document.querySelector("#question");
+    questionForm.value = quiz.q;
+    screan.availWidth=100
+    screen.availHeight=100
+    
+}
+function doAnswer(){
+    //回答用のフォームに入力した値を取得
+    var answerForm = document.querySelector("#answer");
+    var answer = answerForm.value;
+    
+    //回答用フォームで入力した内容を削除する
+    answerForm.value = "";
+
+    //入力した内容が正しいか調べる
+    if (answer == quiz.a) {
+        //入力した内容が正解の時
+        right();
+    } else {
+        //入力した内容が不正解の時
+        wrong();
+    }
+}
+
+//正解の時に実行する関数
+function right(){
+    alert("正解です。次の問題へ進みます。");
+    location.href="h-question10.html";
+    init();
+}
+
+//不正解の時に実行する関数
+function wrong(){
+    alert("間違えています。もう一度考えてみてください。");
+    
+}
+</script>
+</head>
+<body>
+<h1>第9問</h1> <br>
+<img src="q9h.png">
+<h2 class="hinto">解答欄（半角英語）</h2>
+<span class="sample1"><h2><input  type="text" id="answer" value=""></h2></span><br>
+<span class="sample1"><h2><input type="button" value="答える"onclick="doAnswer();"></h2></span><br>
+
+</body>
+</html>
