@@ -4,13 +4,66 @@ body{background-image:url(haikei5.jpg) ;
     background-position: center center;   /* 縦横中央 */
     background-color: rgba(58, 155, 139, 0.61);
     background-blend-mode: lighten;
+
 }
 h1{font-size: 500%;
 color:orange;
 -webkit-text-stroke: 3px #000;
 }
-input{font-size: 300%;}
+input{font-size: 300%;
+   
+}
 .hinto{font-size: 300%;
 color: orangered;
 -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+.dropdown{
+    display:none;
+  }
+  
+  label,
+  li{
+      font-size: 200%;
+    display:block;
+    padding:2em;
+    background:gold;
+    border-bottom:#fff 1px solid;
+    font-family:sans-serif;
+    letter-spacing:.05em;
+    font-weight:bold;
+  }
+  li:hover,
+  label:hover{
+    background:orange;
+  }
+  li::before,
+  label::before{
+    content:"";
+    display:block;
+    position:absolute;
+    right:5%;
+    width:.5em;
+    height:.5em;
+    border-top:#000 2px solid;
+    border-left:#000 2px solid;
+    transform:rotate(135deg);
+  }
+  input[type="checkbox"]{
+   display:none;
+  }
+  label[for="menu"]{
+    display:block;
+    background:orange;
+  }
+  label[for="menu"]::before{
+    transform:rotate(225deg);
+  }
+  #menu:checked + .dropdown{
+    display:block;
+  }
+.menu{background-color:rgba(0,0,0,0) ;}
+  
+
+
+
+
