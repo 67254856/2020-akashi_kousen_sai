@@ -46,10 +46,10 @@ input{font-size: 300%;}
     line-height: 1.2;        /* 行の高さ */
 }
 .password1{position: fixed;
-    top: 1000px;
+    top: 1030px;
     font-size: 200%;}
 .password2{position: fixed;
-        top: 1110px;
+        top: 1140px;
         font-size: 200%;}  
 
 .form{position: fixed;
