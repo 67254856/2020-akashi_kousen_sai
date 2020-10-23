@@ -6,8 +6,8 @@ body{background-image:url(haikei0.jpg) ;
     background-blend-mode: lighten;
 }
 h1{color: aliceblue;
-   font-size: 150%;
-   -webkit-text-stroke: 2px rgb(23, 58, 9);}
+   font-size: 170%;
+   -webkit-text-stroke: 0.5px rgb(23, 58, 9);}
 .tyuui{font-size: 300%;
        color: orange;}
        .sousin1{position: fixed;
