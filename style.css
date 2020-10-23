@@ -46,27 +46,27 @@ input{font-size: 300%;}
     line-height: 1.2;        /* 行の高さ */
 }
 .password1{position: fixed;
-    top: 1040px;
+    top: 940px;
     font-size: 200%;}
 .password2{position: fixed;
-        top: 1150px;
+        top: 1050px;
         font-size: 200%;}  
 
 .form{position: fixed;
       font-size: 300%;
-      top: 120px;
+      top: 50px;
       color: rgb(0, 0, 0);
 }        
 .form0{position: fixed;
        font-size: 280%;
-       top: 300px;}
+       top: 230px;}
 .form1{position: fixed;
        font-size: 300%;
-       top: 300px;
+       top: 230px;
        left:620px;}
 
 .password{position: fixed;
-          top: 290px;
+          top: 220px;
           left:250px;}        
 #page {
     text-align: center;
