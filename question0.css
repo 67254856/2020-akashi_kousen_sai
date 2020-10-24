@@ -7,7 +7,7 @@ body{background-image:url(haikei0.jpg) ;
 }
 h1{color: aliceblue;
    font-size: 200%;
-   -webkit-text-stroke: 0.5px rgb(23, 58, 9);}
+   -webkit-text-stroke: 0.5px rgb(0, 0, 0);}
 .tyuui{font-size: 300%;
        color: orange;}
        .sousin1{position: fixed;
