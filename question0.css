@@ -5,7 +5,7 @@ body{background-image:url(haikei0.jpg) ;
     background-color: rgba(112, 112, 112, 0.938);
     background-blend-mode: lighten;
 }
-h1{color: rgb(0, 136, 255);
+h1{color: rgb(9, 255, 0);
    font-size: 600%;
    -webkit-text-stroke: 0.5px rgb(0, 0, 0);}
 .tyuui{font-size: 300%;
