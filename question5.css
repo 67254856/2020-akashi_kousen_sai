@@ -21,7 +21,7 @@ color: orangered;
     display:none;
   }
   
-  label,
+  .eto1,
   li{
       font-size: 200%;
     display:block;
@@ -33,7 +33,7 @@ color: orangered;
     font-weight:bold;
   }
   li:hover,
-  label:hover{
+  .eto1:hover{
     background:orange;
   }
   li::before,
@@ -48,14 +48,16 @@ color: orangered;
     border-left:#000 2px solid;
     transform:rotate(135deg);
   }
-  input[type="checkbox"]{
+  .eto[type="checkbox"]{
    display:none;
+   font-size: 300%;
   }
-  label[for="menu"]{
+  .eto[for="menu"]{
     display:block;
     background:orange;
+    font-size: 300%;
   }
-  label[for="menu"]::before{
+  .eto[for="menu"]::before{
     transform:rotate(225deg);
   }
   #menu:checked + .dropdown{
@@ -63,6 +65,32 @@ color: orangered;
   }
 .menu{background-color:rgba(0,0,0,0) ;}
   
+.clicktxt {
+  color:#ffffff;
+  background-color: #4169e1;
+  padding:15px;
+  border-radius: 10px;
+  font-size: 150%;
+  }
+  
+  .switchdsp input {
+  display: none;
+  }
+  
+  .switchdsp .dsp {
+  padding: 0px 10px 0px 10px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.9s;
+  opacity: 0;
+  }
+  
+  .switchdsp input:checked ~ .dsp {
+  padding: 0px 25px 0px 25px;
+  height: auto;
+  opacity: 1;
+  
+  }
 
 
 

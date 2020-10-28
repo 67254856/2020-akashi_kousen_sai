@@ -14,4 +14,31 @@ h1{font-size: 500%;
     color: orangered;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     }
+
+    .clicktxt {
+        color:#ffffff;
+        background-color: #4169e1;
+        padding:15px;
+        border-radius: 10px;
+        font-size: 150%;
+        }
+        
+        .switchdsp input {
+        display: none;
+        }
+        
+        .switchdsp .dsp {
+        padding: 0px 10px 0px 10px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.9s;
+        opacity: 0;
+        }
+        
+        .switchdsp input:checked ~ .dsp {
+        padding: 0px 25px 0px 25px;
+        height: auto;
+        opacity: 1;
+        
+        }
     
