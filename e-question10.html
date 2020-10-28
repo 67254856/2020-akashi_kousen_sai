@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>第10問</title>
+<title>easy第2問</title>
 <link rel="stylesheet" type="text/css" href="question10.css">
 <script>
 //出題と答えをセットで入れる配列
@@ -47,20 +47,20 @@ function doAnswer(){
 
 //正解の時に実行する関数
 function right(){
-    alert("正解です。これで問題は終了です。");
-    location.href="e-form2.html";
+    alert("正解です。次の問題に移ります。");
+    location.href="e-question2.html";
     init();
 }
 
 //不正解の時に実行する関数
 function wrong(){
     alert("間違えています。もう一度考えてみてください。");
-    
+    alert("もしかしたら漢字間違いかも…");
 }
 </script>
 </head>
 <body>
-<h1>第10問</h1> <br>
+<h1>第二問</h1> <br>
  <img src="q10e.png">
 <h2 class="hinto">解答欄（漢字）</h2>
 <span class="sample1"><h2><input  type="text" id="answer" value=""></h2></span><br>
