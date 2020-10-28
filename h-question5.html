@@ -64,7 +64,15 @@ function wrong(){
  <img src="q5h.png">
 <h2 class="hinto">解答欄（ひらがな）</h2>
 <span class="sample1"><h2><input  type="text" id="answer" value=""></h2></span><br>
+
 <span class="sample1"><h2><input type="button" value="答える"onclick="doAnswer();"></h2></span><br>
+<div class="switchdsp">
+    <label for="l-1">
+    <span class="clicktxt">わからなかったらヒント</span>
+    </label>
+    <input type="checkbox" id="l-1"><div class="dsp">
+    <h2 class="hinto">ブースにヒントがあるかも…あとはGOOGLEへ行こう！！</h2>
+    </div></div>
 <p><br>
    <br>
    <br>
@@ -831,8 +839,8 @@ function wrong(){
    <br>
    <br>
 </p>
-<label for="menu">Push!!</label>
-<input type="checkbox" id="menu">
+<label class="eto" for="menu">Push!!</label>
+<input class="eto" type="checkbox" id="menu">
 <ul class="dropdown">
   <li>今年の干支は？</li>
 </ul>
