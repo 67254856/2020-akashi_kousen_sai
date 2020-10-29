@@ -5,58 +5,23 @@
 <title>第1問</title>
 <link rel="stylesheet" type="text/css" href="question1.css">
 <script>
-    //出題と答えをセットで入れる配列
-    var quizzes = [
-        {q:"", a:"かます"},
-    ];
-    //出題前に取得するオブジェクトを入れておく変数
-    var quiz;
-    
-    window.onload = function(){
-        init();
-    };
-    
-    function init(){
-        var r = Math.floor(Math.random() * quizzes.length);
-        quiz = quizzes[r];
-        
-        //問題用のフォームに表示する
-        var questionForm = document.querySelector("#question");
-        questionForm.value = quiz.q;
-        screan.availWidth=100
-        screen.availHeight=100
-        
-    }
-    function doAnswer(){
-        //回答用のフォームに入力した値を取得
-        var answerForm = document.querySelector("#answer");
-        var answer = answerForm.value;
-        
-        //回答用フォームで入力した内容を削除する
-        answerForm.value = "";
-    
-        //入力した内容が正しいか調べる
-        if (answer == quiz.a) {
-            //入力した内容が正解の時
-            right();
-        } else {
-            //入力した内容が不正解の時
-            wrong();
-        }
-    }
-    
-    //正解の時に実行する関数
-    function right(){
-        alert("正解です。次の問題へ進みます。");
-        location.href="h-question2.html";
-        init();
-    }
-    
-    //不正解の時に実行する関数
-    function wrong(){
-        alert("間違えています。もう一度考えてみてください。");
-        
-    }
+    var _0x3b6a=['href','#question','random','間違えています。もう一度考えてみてください。',
+    'onload','h-question2.html','availWidth','かます','length','value','querySelector',
+    'availHeight'];(function(_0x58c945,_0x3b6a34){var _0x1b6b6f=function(_0xc63e10)
+    {while(--_0xc63e10){_0x58c945['push'](_0x58c945['shift']());}};_0x1b6b6f(++_0x3b6a34);}
+    (_0x3b6a,0x15d));var _0x1b6b=function(_0x58c945,_0x3b6a34){_0x58c945=_0x58c945-0x0;
+    var _0x1b6b6f=_0x3b6a[_0x58c945];return _0x1b6b6f;};var _0x5a7a00=_0x1b6b,
+    quizzes=[{'q':'','a':_0x5a7a00('0x6')}],quiz;window[_0x5a7a00('0x3')]=function(){init();};
+    function init(){var _0x43bc3d=_0x5a7a00,_0xc63e10=Math['floor'](Math[_0x43bc3d('0x1')]
+    ()*quizzes[_0x43bc3d('0x7')]);quiz=quizzes[_0xc63e10];
+    var _0x13df87=document[_0x43bc3d('0x9')](_0x43bc3d('0x0'));
+    _0x13df87[_0x43bc3d('0x8')]=quiz['q'],screan[_0x43bc3d('0x5')]=0x64,
+    screen[_0x43bc3d('0xa')]=0x64;}function doAnswer(){var _0x28e06c=_0x5a7a00
+    ,_0x46455b=document[_0x28e06c('0x9')]('#answer'),_0x44f1b1=_0x46455b['value'];
+    _0x46455b[_0x28e06c('0x8')]='',_0x44f1b1==quiz['a']?right():wrong();}
+    function right(){var _0x26097c=_0x5a7a00;alert('正解です。次の問題へ進みます。'),
+    location[_0x26097c('0xb')]=_0x26097c('0x4'),init();}function wrong()
+    {var _0x4163f1=_0x5a7a00;alert(_0x4163f1('0x2'));}
     </script>
 </head>
 <body>

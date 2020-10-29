@@ -5,58 +5,25 @@
 <title>第7問</title>
 <link rel="stylesheet" type="text/css" href="question7.css">
 <script>
-//出題と答えをセットで入れる配列
-var quizzes = [
-    {q:"", a:"あかしこうせん"},
-];
-//出題前に取得するオブジェクトを入れておく変数
-var quiz;
-
-window.onload = function(){
-    init();
-};
-
-function init(){
-    var r = Math.floor(Math.random() * quizzes.length);
-    quiz = quizzes[r];
-    
-    //問題用のフォームに表示する
-    var questionForm = document.querySelector("#question");
-    questionForm.value = quiz.q;
-    screan.availWidth=100
-    screen.availHeight=100
-    
-}
-function doAnswer(){
-    //回答用のフォームに入力した値を取得
-    var answerForm = document.querySelector("#answer");
-    var answer = answerForm.value;
-    
-    //回答用フォームで入力した内容を削除する
-    answerForm.value = "";
-
-    //入力した内容が正しいか調べる
-    if (answer == quiz.a) {
-        //入力した内容が正解の時
-        right();
-    } else {
-        //入力した内容が不正解の時
-        wrong();
-    }
-}
-
-//正解の時に実行する関数
-function right(){
-    alert("正解です。次の問題へ進みます。");
-    location.href="h-question8.html";
-    init();
-}
-
-//不正解の時に実行する関数
-function wrong(){
-    alert("間違えています。もう一度考えてみてください。");
-    
-}
+var _0x1395=['availWidth','href','間違えています。もう一度考えてみてください。',
+'floor','#answer','availHeight','正解です。次の問題へ進みます。','#question',
+'あかしこうせん','length','querySelector','value','random','onload'];
+(function(_0x432434,_0x1395fb){var _0x24100a=function(_0x1489c7)
+{while(--_0x1489c7){_0x432434['push'](_0x432434['shift']());}};_0x24100a(++_0x1395fb);}
+(_0x1395,0x112));var _0x2410=function(_0x432434,_0x1395fb)
+{_0x432434=_0x432434-0x0;var _0x24100a=_0x1395[_0x432434];return _0x24100a;};
+var _0x1199b9=_0x2410,quizzes=[{'q':'','a':_0x1199b9('0x0')}]
+,quiz;window[_0x1199b9('0x5')]=function(){init();};function init()
+{var _0x4334ce=_0x1199b9,_0x1489c7=Math[_0x4334ce('0x9')](Math[_0x4334ce('0x4')]
+()*quizzes[_0x4334ce('0x1')]);quiz=quizzes[_0x1489c7];
+var _0x24296e=document['querySelector'](_0x4334ce('0xd'));
+_0x24296e[_0x4334ce('0x3')]=quiz['q'],screan[_0x4334ce('0x6')]=0x64,
+screen[_0x4334ce('0xb')]=0x64;}function doAnswer(){var _0x4590ff=_0x1199b9,
+_0x285f8b=document[_0x4590ff('0x2')](_0x4590ff('0xa')),_0x30100f=_0x285f8b['value'];
+_0x285f8b[_0x4590ff('0x3')]='',_0x30100f==quiz['a']?right():wrong();}
+function right(){var _0x9cc02d=_0x1199b9;alert(_0x9cc02d('0xc')),
+location[_0x9cc02d('0x7')]='h-question8.html',init();}function wrong()
+{var _0xd24990=_0x1199b9;alert(_0xd24990('0x8'));}
 </script>
 </head>
 <body>

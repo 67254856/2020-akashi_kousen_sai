@@ -5,58 +5,25 @@
 <title>第6問</title>
 <link rel="stylesheet" type="text/css" href="question6.css">
 <script>
-//出題と答えをセットで入れる配列
-var quizzes = [
-    {q:"dmr", a:"regular"},
-];
-//出題前に取得するオブジェクトを入れておく変数
-var quiz;
-
-window.onload = function(){
-    init();
-};
-
-function init(){
-    var r = Math.floor(Math.random() * quizzes.length);
-    quiz = quizzes[r];
-    
-    //問題用のフォームに表示する
-    var questionForm = document.querySelector("#question");
-    questionForm.value = quiz.q;
-    screan.availWidth=100
-    screen.availHeight=100
-    
-}
-function doAnswer(){
-    //回答用のフォームに入力した値を取得
-    var answerForm = document.querySelector("#answer");
-    var answer = answerForm.value;
-    
-    //回答用フォームで入力した内容を削除する
-    answerForm.value = "";
-
-    //入力した内容が正しいか調べる
-    if (answer == quiz.a) {
-        //入力した内容が正解の時
-        right();
-    } else {
-        //入力した内容が不正解の時
-        wrong();
-    }
-}
-
-//正解の時に実行する関数
-function right(){
-    alert("正解です。次の問題へ進みます。");
-    location.href="h-question7.html";
-    init();
-}
-
-//不正解の時に実行する関数
-function wrong(){
-    alert("間違えています。もう一度考えてみてください。");
-    
-}
+var _0x2991=['regular','#question','href','querySelector','random',
+'onload','availWidth','floor','正解です。次の問題へ進みます。','availHeight',
+'dmr','value','h-question7.html','#answer'];(function(_0x1c7e08,_0x2991e4)
+{var _0x2f74ff=function(_0x24df48){while(--_0x24df48){_0x1c7e08['push'](_0x1c7e08['shift']());}};
+_0x2f74ff(++_0x2991e4);}(_0x2991,0x1d5));
+var _0x2f74=function(_0x1c7e08,_0x2991e4)
+{_0x1c7e08=_0x1c7e08-0x0;var _0x2f74ff=_0x2991[_0x1c7e08];return _0x2f74ff;};
+var _0x4e04ae=_0x2f74,quizzes=[{'q':_0x4e04ae('0x3'),
+'a':_0x4e04ae('0x7')}],quiz;window[_0x4e04ae('0xc')]=function(){init();};
+function init(){var _0x2fec93=_0x4e04ae,_0x24df48=Math[_0x2fec93('0x0')]
+(Math[_0x2fec93('0xb')]()*quizzes['length']);quiz=quizzes[_0x24df48];
+var _0x83b16d=document[_0x2fec93('0xa')](_0x2fec93('0x8'));
+_0x83b16d[_0x2fec93('0x4')]=quiz['q'],screan[_0x2fec93('0xd')]=0x64,
+screen[_0x2fec93('0x2')]=0x64;}function doAnswer()
+{var _0x5cdb88=_0x4e04ae,_0x3b9d66=document[_0x5cdb88('0xa')](_0x5cdb88('0x6')),
+_0x4f0e52=_0x3b9d66[_0x5cdb88('0x4')];_0x3b9d66[_0x5cdb88('0x4')]='',
+_0x4f0e52==quiz['a']?right():wrong();}function right()
+{var _0x3e5e5d=_0x4e04ae;alert(_0x3e5e5d('0x1')),location[_0x3e5e5d('0x9')]=_0x3e5e5d('0x5'),
+init();}function wrong(){alert('間違えています。もう一度考えてみてください。');}
 </script>
 </head>
 <body>

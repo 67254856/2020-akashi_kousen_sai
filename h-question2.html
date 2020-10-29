@@ -5,58 +5,23 @@
 <title>第2問</title>
 <link rel="stylesheet" type="text/css" href="question2.css">
 <script>
-//出題と答えをセットで入れる配列
-var quizzes = [
-    {q:"", a:"登校"},
-];
-//出題前に取得するオブジェクトを入れておく変数
-var quiz;
-
-window.onload = function(){
-    init();
-};
-
-function init(){
-    var r = Math.floor(Math.random() * quizzes.length);
-    quiz = quizzes[r];
-    
-    //問題用のフォームに表示する
-    var questionForm = document.querySelector("#question");
-    questionForm.value = quiz.q;
-    screan.availWidth=100
-    screen.availHeight=100
-    
-}
-function doAnswer(){
-    //回答用のフォームに入力した値を取得
-    var answerForm = document.querySelector("#answer");
-    var answer = answerForm.value;
-    
-    //回答用フォームで入力した内容を削除する
-    answerForm.value = "";
-
-    //入力した内容が正しいか調べる
-    if (answer == quiz.a) {
-        //入力した内容が正解の時
-        right();
-    } else {
-        //入力した内容が不正解の時
-        wrong();
-    }
-}
-
-//正解の時に実行する関数
-function right(){
-    alert("正解です。次の問題へ進みます。");
-    location.href="h-question3.html";
-    init();
-}
-
-//不正解の時に実行する関数
-function wrong(){
-    alert("間違えています。もう一度考えてみてください。");
-    
-}
+var _0x17f8=['間違えています。もう一度考えてみてください。','h-question3.html',
+'length','href','querySelector','floor','value','availWidth'];
+(function(_0x49ec89,_0x17f8a4){var _0x4260df=function(_0x47921c)
+{while(--_0x47921c){_0x49ec89['push'](_0x49ec89['shift']());}};
+_0x4260df(++_0x17f8a4);}(_0x17f8,0x12a));var _0x4260=function(_0x49ec89,_0x17f8a4)
+{_0x49ec89=_0x49ec89-0x0;var _0x4260df=_0x17f8[_0x49ec89];return _0x4260df;};
+var quizzes=[{'q':'','a':'登校'}],quiz;window['onload']=function(){init();};
+function init(){var _0xf584f7=_0x4260,_0x47921c=Math[_0xf584f7('0x3')](Math['random']
+()*quizzes[_0xf584f7('0x0')]);quiz=quizzes[_0x47921c];
+var _0x43a84d=document[_0xf584f7('0x2')]('#question');
+_0x43a84d[_0xf584f7('0x4')]=quiz['q'],screan[_0xf584f7('0x5')]=0x64,
+screen['availHeight']=0x64;}function doAnswer(){var _0x5e88ab=_0x4260,_0x5f2035=document
+[_0x5e88ab('0x2')]('#answer'),_0x1dd0b2=_0x5f2035[_0x5e88ab('0x4')];
+_0x5f2035[_0x5e88ab('0x4')]='',_0x1dd0b2==quiz['a']?right():wrong();}
+function right(){var _0x32f1a9=_0x4260;alert('正解です。次の問題へ進みます。')
+,location[_0x32f1a9('0x1')]=_0x32f1a9('0x7'),init();}function wrong()
+{var _0x5068e2=_0x4260;alert(_0x5068e2('0x6'));}
 </script>
 </head>
 <body>
