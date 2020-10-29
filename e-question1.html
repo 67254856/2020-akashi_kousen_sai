@@ -5,58 +5,29 @@
 <title>easy第8問</title>
 <link rel="stylesheet" type="text/css" href="question1.css">
 <script>
-    //出題と答えをセットで入れる配列
-    var quizzes = [
-        {q:"", a:"タイアタリ"},
-    ];
-    //出題前に取得するオブジェクトを入れておく変数
-    var quiz;
+   
+    var _0x1647=['length','e-question6.html','querySelector','floor','onload',
+    'ヒント：「ラブ」を違う言い方で。','availWidth','availHeight','random','href',
+    '#question','value','タイアタリ','#answer'];(function(_0x267776,_0x16477c)
+    {var _0x40a7c6=function(_0x4732c1){while(--_0x4732c1){_0x267776['push']
+    (_0x267776['shift']());}};_0x40a7c6(++_0x16477c);}(_0x1647,0x14c));
+    var _0x40a7=function(_0x267776,_0x16477c){_0x267776=_0x267776-0x0;
+    var _0x40a7c6=_0x1647[_0x267776];return _0x40a7c6;};
+    var _0x542f2d=_0x40a7,quizzes=[{'q':'','a':_0x542f2d('0x2')}],quiz;
+    window[_0x542f2d('0x8')]=function(){init();};function init()
+    {var _0x438f27=_0x542f2d,_0x4732c1=Math[_0x438f27('0x7')](Math[_0x438f27('0xc')]
+    ()*quizzes[_0x438f27('0x4')]);quiz=quizzes[_0x4732c1];
+    var _0x1434c5=document['querySelector'](_0x438f27('0x0'));
+    _0x1434c5[_0x438f27('0x1')]=quiz['q'],screan[_0x438f27('0xa')]=0x64,
+    screen[_0x438f27('0xb')]=0x64;}function doAnswer()
+    {var _0x377e1c=_0x542f2d,_0x44179c=document[_0x377e1c('0x6')](_0x377e1c('0x3')),
+    _0x4ad5d1=_0x44179c[_0x377e1c('0x1')];_0x44179c[_0x377e1c('0x1')]='',
+    _0x4ad5d1==quiz['a']?right():wrong();}function right()
+    {var _0x1f0694=_0x542f2d;alert('正解です。次の問題へ進みます。'),
+    location[_0x1f0694('0xd')]=_0x1f0694('0x5'),init();}function wrong()
+    {var _0x50635d=_0x542f2d;alert('間違えています。もう一度考えてみてください。')
+    ,alert(_0x50635d('0x9'));}
     
-    window.onload = function(){
-        init();
-    };
-    
-    function init(){
-        var r = Math.floor(Math.random() * quizzes.length);
-        quiz = quizzes[r];
-        
-        //問題用のフォームに表示する
-        var questionForm = document.querySelector("#question");
-        questionForm.value = quiz.q;
-        screan.availWidth=100
-        screen.availHeight=100
-        
-    }
-    function doAnswer(){
-        //回答用のフォームに入力した値を取得
-        var answerForm = document.querySelector("#answer");
-        var answer = answerForm.value;
-        
-        //回答用フォームで入力した内容を削除する
-        answerForm.value = "";
-    
-        //入力した内容が正しいか調べる
-        if (answer == quiz.a) {
-            //入力した内容が正解の時
-            right();
-        } else {
-            //入力した内容が不正解の時
-            wrong();
-        }
-    }
-    
-    //正解の時に実行する関数
-    function right(){
-        alert("正解です。次の問題へ進みます。");
-        location.href="e-question6.html";
-        init();
-    }
-    
-    //不正解の時に実行する関数
-    function wrong(){
-        alert("間違えています。もう一度考えてみてください。");
-        alert("ヒント：「ラブ」を違う言い方で。")
-    }
     </script>
 </head>
 <body>

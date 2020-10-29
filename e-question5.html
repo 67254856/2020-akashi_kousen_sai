@@ -5,58 +5,24 @@
 <title>easy第6問</title>
 <link rel="stylesheet" type="text/css" href="question5.css">
 <script>
-//出題と答えをセットで入れる配列
-var quizzes = [
-    {q:"", a:"21"},
-    ];
-//出題前に取得するオブジェクトを入れておく変数
-var quiz;
 
-window.onload = function(){
-    init();
-};
-
-function init(){
-    var r = Math.floor(Math.random() * quizzes.length);
-    quiz = quizzes[r];
-    
-    //問題用のフォームに表示する
-    var questionForm = document.querySelector("#question");
-    questionForm.value = quiz.q;
-    screan.availWidth=100
-    screen.availHeight=100
-    
-}
-function doAnswer(){
-    //回答用のフォームに入力した値を取得
-    var answerForm = document.querySelector("#answer");
-    var answer = answerForm.value;
-    
-    //回答用フォームで入力した内容を削除する
-    answerForm.value = "";
-
-    //入力した内容が正しいか調べる
-    if (answer == quiz.a) {
-        //入力した内容が正解の時
-        right();
-    } else {
-        //入力した内容が不正解の時
-        wrong();
-    }
-}
-
-//正解の時に実行する関数
-function right(){
-    alert("正解です。次の問題へ進みます。");
-    location.href="e-question9.html";
-    init();
-}
-
-//不正解の時に実行する関数
-function wrong(){
-    alert("間違えています。もう一度考えてみてください。");
-    alert("ヒント：日本語に直して。");
-}
+var _0x5764=['random','querySelector','#answer','#question',
+'availHeight','length','onload','間違えています。もう一度考えてみてください。',
+'ヒント：日本語に直して。','value','正解です。次の問題へ進みます。','availWidth'];
+(function(_0x332a59,_0x576470){var _0xd5f376=function(_0x4c1b32){while(--_0x4c1b32)
+{_0x332a59['push'](_0x332a59['shift']());}};_0xd5f376(++_0x576470);}(_0x5764,0x90));
+var _0xd5f3=function(_0x332a59,_0x576470){_0x332a59=_0x332a59-0x0;
+var _0xd5f376=_0x5764[_0x332a59];return _0xd5f376;};var _0x1adcb7=_0xd5f3,
+quizzes=[{'q':'','a':'21'}],quiz;window[_0x1adcb7('0x6')]=function(){init();};
+function init(){var _0x3239bc=_0x1adcb7,_0x4c1b32=Math['floor'](Math[_0x3239bc('0x0')]
+()*quizzes[_0x3239bc('0x5')]);quiz=quizzes[_0x4c1b32];var _0x6e8d12=document[_0x3239bc('0x1')]
+(_0x3239bc('0x3'));_0x6e8d12['value']=quiz['q'],
+screan[_0x3239bc('0xb')]=0x64,screen[_0x3239bc('0x4')]=0x64;}
+function doAnswer(){var _0x310b84=_0x1adcb7,_0x5ad40a=document['querySelector']
+(_0x310b84('0x2')),_0x383401=_0x5ad40a['value'];_0x5ad40a[_0x310b84('0x9')]='',
+_0x383401==quiz['a']?right():wrong();}function right(){var _0x186e2f=_0x1adcb7;
+alert(_0x186e2f('0xa')),location['href']='e-question9.html',init();}function wrong()
+{var _0x4dc7a3=_0x1adcb7;alert(_0x4dc7a3('0x7')),alert(_0x4dc7a3('0x8'));}
 </script>
 </head>
 <body>

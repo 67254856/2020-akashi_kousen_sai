@@ -5,58 +5,23 @@
 <title>easy第3問</title>
 <link rel="stylesheet" type="text/css" href="question2.css">
 <script>
-//出題と答えをセットで入れる配列
-var quizzes = [
-    {q:"", a:"4"},
-];
-//出題前に取得するオブジェクトを入れておく変数
-var quiz;
 
-window.onload = function(){
-    init();
-};
-
-function init(){
-    var r = Math.floor(Math.random() * quizzes.length);
-    quiz = quizzes[r];
-    
-    //問題用のフォームに表示する
-    var questionForm = document.querySelector("#question");
-    questionForm.value = quiz.q;
-    screan.availWidth=100
-    screen.availHeight=100
-    
-}
-function doAnswer(){
-    //回答用のフォームに入力した値を取得
-    var answerForm = document.querySelector("#answer");
-    var answer = answerForm.value;
-    
-    //回答用フォームで入力した内容を削除する
-    answerForm.value = "";
-
-    //入力した内容が正しいか調べる
-    if (answer == quiz.a) {
-        //入力した内容が正解の時
-        right();
-    } else {
-        //入力した内容が不正解の時
-        wrong();
-    }
-}
-
-//正解の時に実行する関数
-function right(){
-    alert("正解です。次の問題へ進みます。");
-    location.href="e-question3.html";
-    init();
-}
-
-//不正解の時に実行する関数
-function wrong(){
-    alert("間違えています。もう一度考えてみてください。");
-    alert("ブースの中にヒントが…");
-}
+var _0x487e=['ブースの中にヒントが…','floor','random','#question','availHeight','href',
+'querySelector','#answer','正解です。次の問題へ進みます。','value','length',
+'間違えています。もう一度考えてみてください。'];(function(_0x469054,_0x487ef7)
+{var _0x551461=function(_0x3ea5bf){while(--_0x3ea5bf){_0x469054['push'](_0x469054['shift']());
+}};_0x551461(++_0x487ef7);}(_0x487e,0x8b));var _0x5514=function(_0x469054,_0x487ef7)
+{_0x469054=_0x469054-0x0;var _0x551461=_0x487e[_0x469054];return _0x551461;};
+var quizzes=[{'q':'','a':'4'}],quiz;window['onload']=function(){init();};function init()
+{var _0x5818de=_0x5514,_0x3ea5bf=Math[_0x5818de('0x6')](Math[_0x5818de('0x7')]
+()*quizzes[_0x5818de('0x3')]);quiz=quizzes[_0x3ea5bf];var _0x20ef70=document[_0x5818de('0xb')]
+(_0x5818de('0x8'));_0x20ef70['value']=quiz['q'],
+screan['availWidth']=0x64,screen[_0x5818de('0x9')]=0x64;}
+function doAnswer(){var _0x16b919=_0x5514,_0x2e7405=document['querySelector']
+(_0x16b919('0x0')),_0x2a6b7d=_0x2e7405['value'];_0x2e7405[_0x16b919('0x2')]='',
+_0x2a6b7d==quiz['a']?right():wrong();}function right(){var _0x69340c=_0x5514;
+alert(_0x69340c('0x1')),location[_0x69340c('0xa')]='e-question4.html',init();}
+function wrong(){var _0x2287be=_0x5514;alert(_0x2287be('0x4')),alert(_0x2287be('0x5'));}
 </script>
 </head>
 <body>
