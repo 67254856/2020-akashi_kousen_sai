@@ -164,3 +164,10 @@ a.btn-flat2:hover:before {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(135deg);
   transform: translateX(-9%) translateY(-25%) rotate(135deg);
 }
+
+.youkoso{font-size: 250%;
+  color:rgb(238, 255, 0);
+  margin: -2em auto;
+  -webkit-text-stroke: 3px #000;
+  /*top:500px;
+  left:120px;*/}
