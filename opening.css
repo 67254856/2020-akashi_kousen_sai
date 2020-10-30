@@ -48,7 +48,7 @@ h1{font-size: 250%;
   margin:auto;
   -webkit-text-stroke: 2px #000;
 }
-ul{position: fixed;
+ul{position: absolute;
   font-size: 150%;
   top:1100px;
   left:120px;}
@@ -127,7 +127,7 @@ a.btn-flat:hover:before {
 }
 a{
   position:fixed;
-  top:900px;
+  top:800px;
   left:140px;
 }
 
