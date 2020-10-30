@@ -27,9 +27,9 @@ body {
   margin:auto;
   -webkit-text-stroke: 2px #000;
 }
-h2{position: fixed;
-  font-size: 200%;
-  top:1300px;
+ul{position: fixed;
+  font-size: 150%;
+  top:1100px;
   left:200px;}
 
 
@@ -67,9 +67,9 @@ button.btn {
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  letter-spacing: 0.1em;
+  letter-spacing: 0em;
   color: #212529;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
 }
 
 /*その他と主な共通部分は省略*/
@@ -106,7 +106,7 @@ a.btn-flat:hover:before {
 }
 a{
   position:fixed;
-  top:1100px;
+  top:900px;
   left:140px;
 }
 
