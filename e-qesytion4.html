@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>easy第5問</title>
+<link rel="stylesheet" type="text/css" href="question4.css">
+<script>
+/*//出題と答えをセットで入れる配列
+var quizzes = [
+    {q:"", a:"4"},
+];
+//出題前に取得するオブジェクトを入れておく変数
+var quiz;
+
+window.onload = function(){
+    init();
+};
+
+function init(){
+    var r = Math.floor(Math.random() * quizzes.length);
+    quiz = quizzes[r];
+    
+    //問題用のフォームに表示する
+    var questionForm = document.querySelector("#question");
+    questionForm.value = quiz.q;
+    screan.availWidth=100
+    screen.availHeight=100
+    
+}
+function doAnswer(){
+    //回答用のフォームに入力した値を取得
+    var answerForm = document.querySelector("#answer");
+    var answer = answerForm.value;
+    
+    //回答用フォームで入力した内容を削除する
+    answerForm.value = "";
+
+    //入力した内容が正しいか調べる
+    if (answer == quiz.a) {
+        //入力した内容が正解の時
+        right();
+    } else {
+        //入力した内容が不正解の時
+        wrong();
+    }
+}
+
+//正解の時に実行する関数
+function right(){
+    alert("正解です。次の問題へ進みます。");
+    location.href="e-question5.html";
+    init();
+}
+
+//不正解の時に実行する関数
+function wrong(){
+    alert("間違えています。もう一度考えてみてください。");
+    alert("ヒント：もっとメジャーないいかたで。");
+}*/
+
+var _0x1864=['length','正解です。次の問題へ進みます。','e-question5.html',
+'floor','value','ヒント：もっとメジャーないいかたで。',
+'#answer','間違えています。もう一度考えてみてください。',
+'querySelector','onload','availHeight'];(function(_0x2822bd,_0x186487)
+{var _0x3c6788=function(_0xf67158){while(--_0xf67158){_0x2822bd['push']
+(_0x2822bd['shift']());}};_0x3c6788(++_0x186487);}(_0x1864,0xff));
+var _0x3c67=function(_0x2822bd,_0x186487){_0x2822bd=_0x2822bd-0x0;
+var _0x3c6788=_0x1864[_0x2822bd];return _0x3c6788;};var _0x39fc26=_0x3c67
+,quizzes=[{'q':'','a':'4'}],quiz;window[_0x39fc26('0x7')]=function(){init();}
+;function init(){var _0x57a941=_0x39fc26,_0xf67158=Math[_0x57a941('0x1')]
+(Math['random']()*quizzes[_0x57a941('0x9')]);quiz=quizzes[_0xf67158];
+var _0x94d2f4=document['querySelector']('#question');_0x94d2f4[_0x57a941('0x2')]
+=quiz['q'],screan['availWidth']=0x64,screen[_0x57a941('0x8')]=0x64;}function doAnswer()
+{var _0x2cfdad=_0x39fc26,_0x11b87e=document[_0x2cfdad('0x6')](_0x2cfdad('0x4'))
+,_0x526bc8=_0x11b87e['value'];_0x11b87e[_0x2cfdad('0x2')]=''
+,_0x526bc8==quiz['a']?right():wrong();}function right(){var _0x316382=_0x39fc26;
+alert(_0x316382('0xa')),location['href']=_0x316382('0x0'),init();}function wrong()
+{var _0x2e49aa=_0x39fc26;alert(_0x2e49aa('0x5')),alert(_0x2e49aa('0x3'));}
+</script>
+
+</head>
+<body>
+<h1>第五問</h1> <br>
+<img src="q4e.png">
+<h2 class="hinto">解答欄（半角）</h2>
+<span class="sample1"><h2><input  type="text" id="answer" value=""></h2></span><br>
+<span class="sample1"><h2><input type="button" value="答える"onclick="doAnswer();"></h2></span><br>
+
+    
+</body>
+</html>
