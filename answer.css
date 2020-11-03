@@ -1,0 +1,16 @@
+.number{color: rgb(250, 0, 187);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    line-height:75%;
+}
+hr{border:0;
+    border-bottom: 5px dashed #000000;}
+
+    body {
+        background-image:url(rogo.jpg) ;
+        background-size: cover;               /* 全画面 */
+        background-attachment: fixed;         /* 固定 */
+        background-position: center center;   /* 縦横中央 */
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: lighten;
+        top: 350px;
+      }
