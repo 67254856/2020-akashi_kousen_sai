@@ -9,7 +9,7 @@ body {
   top: 350px;
 }
 
-h1{font-size: 250%;
+h1{font-size: 230%;
   color:rgb(0, 0, 0);
   margin: -27em auto;
   /*top:500px;
@@ -159,15 +159,58 @@ a.btn-flat2:before {
   transform: translateX(-98%) translateY(-70%) rotate(135deg);
   background: #fcfcfc;
 }
-
-a.btn-flat2:hover:before {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(135deg);
-  transform: translateX(-9%) translateY(-25%) rotate(135deg);
+a.btn-flat2 {
+  overflow: hidden;
+  padding: 1.5rem 6rem;
+  color: #fff;
+  border-radius: 0;
+  background: rgb(0, 248, 62);
 }
 
 .youkoso{font-size: 250%;
   color:rgb(238, 255, 0);
-  margin: -2em auto;
+  margin: -3.5em auto;
   -webkit-text-stroke: 3px #000;
   /*top:500px;
   left:120px;*/}
+
+  a.btn-flat3 span {
+    position: relative;
+  }
+  a.btn-flat3:hover:before {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(135deg);
+    transform: translateX(-9%) translateY(-25%) rotate(135deg);
+  }
+  a.btn-flat3 span {
+    position: relative;
+  }
+  
+  a.btn-flat3:before {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 150%;
+    height: 600%;
+    content: '';
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
+    transform: translateX(-98%) translateY(-70%) rotate(135deg);
+    background: #ffffff;
+  }
+  
+  a.btn-flat3:hover:before {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(135deg);
+    transform: translateX(-9%) translateY(-25%) rotate(135deg);
+  }
+  a.btn-flat3 {
+    position: fixed;
+    top: -25px;
+    left: 550px;
+    overflow: hidden;
+    padding: 0.4rem 7rem;
+    color: rgb(0, 0, 0);
+    border-radius: 0;
+    background: rgb(0, 248, 236,0.5);
+  }
+  
